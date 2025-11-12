@@ -40,4 +40,5 @@ def solveNQueens(n):
     return result
 
 # Test
-print(solveNQueens(4))
+amount=int(input("enter the number of queens :"))
+print(solveNQueens(amount))
