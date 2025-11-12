@@ -1,3 +1,4 @@
+#first we need to create the function for this problem
 def find_median_sorted_arrays(array1, array2):
     if len(array1) > len(array2):
         array1, array2 = array2, array1
@@ -7,7 +8,7 @@ def find_median_sorted_arrays(array1, array2):
     half_size = total_size // 2
     
     low, high = 0, size1
-    
+      # we basically checks the number add them both and divide the total with 2 and one important thing is check the number is both at low and high end because some times we see the outliner
     while low <= high:
         cut1 = (low + high) // 2
         cut2 = half_size - cut1
@@ -39,4 +40,5 @@ first_array = list(map(int, input("First sorted array: ").split()))
 second_array = list(map(int, input("Second sorted array: ").split()))
 
 median_value = find_median_sorted_arrays(first_array, second_array)
+
 print(f"The median is: {median_value}")
